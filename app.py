@@ -4,8 +4,10 @@ from sqlalchemy.orm import Session
 from sqlalchemy.ext.automap import automap_base
 
 # Database Setup
-DATABASE_URI = "sqlite:///C:/Users/leors/Project-4-Credit-Worthiness/Resources/credit_worthiness.db"
+# DATABASE_URI = "sqlite:///C:/Users/leors/Project-4-Credit-Worthiness/Resources/credit_worthiness.sqlite"
+DATABASE_URI = "sqlite:///credit_worthiness.sqlite"
 engine = create_engine(DATABASE_URI)
+
 
 # Reflect the existing database into a new model
 Base = automap_base()
