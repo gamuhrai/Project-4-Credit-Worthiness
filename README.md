@@ -38,5 +38,23 @@ This model was developed for potential clients in the financial sector to stream
 4. **Credit_Score.ipynb:** Train and test iterations of the machine learning model. Generates performance graphics and reports detailing the strengths and weaknesses of the final model.
 
 
+## Walk-through
+The initial test and train dataframes have the following characteristics.
+
+![Alt Text](images/test_info.png)    
+![Alt Text](images/train_info.png)
+
+The first model generated the following confusion matrix and classification report.
+
+![Alt Text](images/confusion_matrix_1_initial_model.png)
 
 
+![Alt Text](images/classification_Report_initial_model.png)
+
+After oversampling and decision tree classifier, the smote model generated the following confusion matrix and classification report.
+
+![Alt Text](images/confusion_matrix_1_final_model.png)
+
+![Alt Text](images/classification_Report_final_model.png)
+
+This final model was able to generate an overall accuracy of 88%. Meaning that this model was able to correct categorize individual into the correct credit rating of poor, standard and good.
